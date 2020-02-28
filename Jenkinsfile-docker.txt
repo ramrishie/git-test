@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('One') {
                 steps {
-                        echo 'Hi, this is Puneet from DevOps'
+                        echo 'Hi, this is Ramgopal from DevOps'
 			
                 }
         }
@@ -21,6 +21,7 @@ pipeline {
                 }
                 steps {
 			echo "Hello"
+			echo 'Ramgopal-stage3-substep Test'
                         }
         }
         stage('Four') {
@@ -28,6 +29,7 @@ pipeline {
                         stage('Unit Test') {
                                 steps{
                                         echo "Running the unit test..."
+					echo 'Ramgopal-stage4-substep-Unit Test'
                                 }
                         }
                         stage('Integration test') {
@@ -39,6 +41,7 @@ pipeline {
 			}
 				steps {
 					echo 'Running the integration test..'
+					echo 'Ramgopal-stage4-substep-integration Test'
 				}
                                
 			}  }
