@@ -4,14 +4,14 @@ pipeline {
         stage('Example Build') {
             agent { docker 'maven:3-alpine' } 
             steps {
-                echo 'Hello, Maven'
+                echo 'Hello, Maven - Edited by Ramgopal'
                 sh 'mvn --version'
             }
         }
         stage('Example Test') {
             agent { docker 'openjdk:8-jre' } 
             steps {
-                echo 'Hello, JDK'
+                echo 'Hello, JDK - Edited by Ram'
                 sh 'java -version'
             }
         }
